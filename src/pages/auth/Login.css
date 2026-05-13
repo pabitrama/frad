@@ -1,0 +1,211 @@
+.login-page {
+background:
+    linear-gradient(
+    rgba(253, 186, 2, 0.616),
+    rgba(8, 90, 199, 0.671)    
+    ),
+    url(../../assets/images/frad_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.card {
+  backdrop-filter: blur(10px);
+}
+
+.form-control {
+  height: 48px;
+  border-radius: 10px;
+}
+
+.btn {
+  height: 45px;
+  font-weight: 600;
+}
+
+/* =========================================
+   LOGIN CARD
+========================================= */
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+
+  border-radius: 24px;
+
+  background: var(--primary)!important;
+
+  backdrop-filter:
+    blur(18px);
+
+  border:
+    1px solid rgba(255,255,255,0.2);
+}
+
+/* =========================================
+   OTP WRAPPER
+========================================= */
+
+.otp-wrapper {
+  position: relative;
+}
+
+/* OTP BUTTON */
+
+.otp-btn {
+  position: absolute;
+
+  top: 50%;
+  right: 6px;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background:
+    var(--primary);
+
+  color: #fff;
+
+  height: 36px;
+
+  padding: 0 14px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+  height: 48px;
+
+  border-radius: 14px;
+
+  font-weight: 600;
+}
+
+/* SEND OTP BUTTON */
+
+.send-otp-btn {
+  height: 48px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--secondary),
+      var(--secondary-hover)
+    );
+
+  color: #fff;
+
+  font-weight: 600;
+}
+
+/* FORGOT */
+
+.forgot-btn {
+  color: #fff;
+}
+
+/* PASSWORD */
+
+.password-wrapper {
+  position: relative;
+}
+
+.show-pass-btn {
+  position: absolute;
+
+  top: 50%;
+  right: 12px;
+
+  transform: translateY(-50%);
+
+  border: none;
+  background: transparent;
+
+  color: var(--secondary);
+}
+
+/* OTP */
+
+.otp-wrapper {
+  position: relative;
+}
+
+.otp-btn {
+  position: absolute;
+
+  top: 50%;
+  right: 6px;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background:
+    var(--primary);
+
+  color: #fff;
+
+  height: 36px;
+
+  border-radius: 10px;
+
+  padding: 0 14px;
+
+  font-size: 12px;
+}
+
+/* VERIFY */
+
+.verify-btn {
+  height: 46px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--secondary),
+      var(--secondary-hover)
+    );
+
+  color: #fff;
+
+  font-weight: 600;
+}
+
+/* SUCCESS */
+
+.otp-success {
+  background:
+    rgba(25,135,84,0.15);
+
+  border:
+    1px solid #198754;
+
+  color: #198754;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-weight: 600;
+}

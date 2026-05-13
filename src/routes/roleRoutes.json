@@ -1,0 +1,212 @@
+{
+  "Admin": {
+    "defaultRoute": "/admin/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/admin/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Procurement",
+        "path": "/admin/procurement",
+        "icon": "bi bi-cart-check"
+      },
+      {
+        "name": "Inventory",
+        "path": "/admin/inventory",
+        "icon": "bi bi-box-seam"
+      },
+      {
+        "name": "Allocation",
+        "path": "/admin/allocation",
+        "icon": "bi bi-diagram-3"
+      },
+      {
+        "name": "AI Services",
+        "path": "/admin/ai-services",
+        "icon": "bi bi-clipboard-pulse"
+      },
+      {
+        "name": "Farmer Management",
+        "path": "/admin/farmers",
+        "icon": "bi bi-people"
+      },
+      {
+        "name": "Restocking",
+        "path": "/admin/restocking",
+        "icon": "bi bi-arrow-repeat"
+      },
+      {
+        "name": "Redistribution",
+        "path": "/admin/redistribution",
+        "icon": "bi bi-arrow-left-right"
+      },
+      {
+        "name": "Reports",
+        "path": "/admin/reports",
+        "icon": "bi bi-bar-chart"
+      },
+      {
+        "name": "Grievances",
+        "path": "/admin/grievances",
+        "icon": "bi bi-exclamation-circle"
+      },
+      {
+        "name": "Settings",
+        "path": "/admin/settings",
+        "icon": "bi bi-gear"
+      }
+    ]
+  },
+
+  "State Officer": {
+    "defaultRoute": "/state/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/state/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Procurement",
+        "path": "/state/procurement",
+        "icon": "bi bi-cart-check"
+      },
+      {
+        "name": "Inventory",
+        "path": "/state/inventory",
+        "icon": "bi bi-box-seam"
+      },
+      {
+        "name": "Allocation",
+        "path": "/state/allocation",
+        "icon": "bi bi-diagram-3"
+      },
+      {
+        "name": "Reports",
+        "path": "/state/reports",
+        "icon": "bi bi-bar-chart"
+      },
+      {
+        "name": "Grievances",
+        "path": "/state/grievances",
+        "icon": "bi bi-exclamation-circle"
+      }
+    ]
+  },
+
+  "District Officer": {
+    "defaultRoute": "/district/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/district/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Inventory",
+        "path": "/district/inventory",
+        "icon": "bi bi-box-seam"
+      },
+      {
+        "name": "Allocation Request",
+        "path": "/district/allocation-request",
+        "icon": "bi bi-send"
+      },
+      {
+        "name": "Redistribution",
+        "path": "/district/redistribution",
+        "icon": "bi bi-arrow-left-right"
+      },
+      {
+        "name": "Reports",
+        "path": "/district/reports",
+        "icon": "bi bi-bar-chart"
+      }
+    ]
+  },
+
+  "Block Officer": {
+    "defaultRoute": "/block/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/block/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Stock Distribution",
+        "path": "/block/stock-distribution",
+        "icon": "bi bi-boxes"
+      },
+      {
+        "name": "Restocking",
+        "path": "/block/restocking",
+        "icon": "bi bi-arrow-repeat"
+      },
+      {
+        "name": "AI Technician Assignment",
+        "path": "/block/technician-assignment",
+        "icon": "bi bi-person-check"
+      }
+    ]
+  },
+
+  "AI Technician": {
+    "defaultRoute": "/technician/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/technician/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Farmer Registration",
+        "path": "/technician/farmer-registration",
+        "icon": "bi bi-person-plus"
+      },
+      {
+        "name": "Animal Registration",
+        "path": "/technician/animal-registration",
+        "icon": "bi bi-bounding-box"
+      },
+      {
+        "name": "AI Service",
+        "path": "/technician/ai-service",
+        "icon": "bi bi-heart-pulse"
+      },
+      {
+        "name": "Service History",
+        "path": "/technician/service-history",
+        "icon": "bi bi-clock-history"
+      }
+    ]
+  },
+
+  "Vendor": {
+    "defaultRoute": "/vendor/dashboard",
+    "pages": [
+      {
+        "name": "Dashboard",
+        "path": "/vendor/dashboard",
+        "icon": "bi bi-speedometer2"
+      },
+      {
+        "name": "Supply Orders",
+        "path": "/vendor/supply-orders",
+        "icon": "bi bi-truck"
+      },
+      {
+        "name": "Dispatch Entry",
+        "path": "/vendor/dispatch-entry",
+        "icon": "bi bi-box-arrow-up"
+      },
+      {
+        "name": "Delivery Status",
+        "path": "/vendor/delivery-status",
+        "icon": "bi bi-clipboard-check"
+      }
+    ]
+  }
+}

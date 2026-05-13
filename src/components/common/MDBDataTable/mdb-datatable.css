@@ -1,0 +1,146 @@
+.mdb-datatable-wrapper {
+
+  background: var(--white);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+}
+
+/* TOPBAR */
+
+.datatable-topbar {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 16px;
+
+  border-bottom:
+    1px solid
+    var(--border-light);
+}
+
+.datatable-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.entries-box {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+.datatable-search {
+  width: 250px;
+}
+
+/* TABLE */
+
+.datatable-scroll {
+
+  overflow: auto;
+
+  position: relative;
+}
+
+.custom-mdb-table {
+
+  margin-bottom: 0;
+
+  min-width: 1200px;
+}
+
+.custom-mdb-table thead th {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 10;
+
+  background:
+    var(--secondary);
+
+  color:
+    var(--white);
+
+  white-space: nowrap;
+}
+
+.custom-mdb-table td,
+.custom-mdb-table th {
+
+  vertical-align: middle;
+
+  white-space: nowrap;
+}
+
+/* FIXED LEFT */
+
+.fixed-left {
+
+  position: sticky;
+
+  left: 0;
+
+  z-index: 11;
+
+  background:
+    var(--white);
+}
+
+/* FIXED RIGHT */
+
+.fixed-right {
+
+  position: sticky;
+
+  right: 0;
+
+  z-index: 11;
+
+  background:
+    var(--white);
+}
+
+/* FOOTER */
+
+.datatable-footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 16px;
+
+  border-top:
+    1px solid
+    var(--border-light);
+}
+
+.pagination-box {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}

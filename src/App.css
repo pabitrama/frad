@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+
+/* =========================================
+   FORM LABEL
+========================================= */
+
+.form-label,
+label {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--secondary);
+
+  margin-bottom: 8px;
+
+  letter-spacing: 0.3px;
+}
+
+/* =========================================
+   FORM CONTROL
+========================================= */
+
+.form-control {
+  height: 48px;
+
+  border:
+    1.5px solid var(--primary-border);
+
+  border-radius: 12px;
+
+  background: #fff;
+
+  color: var(--text-primary);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  padding:
+    10px 14px;
+
+  transition:
+    all 0.3s ease;
+
+  box-shadow: none;
+}
+
+/* PLACEHOLDER */
+
+.form-control::placeholder {
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+/* HOVER */
+
+.form-control:hover {
+  border-color: var(--primary);
+}
+
+/* FOCUS */
+
+.form-control:focus {
+  border-color: var(--primary);
+
+  box-shadow:
+    0 0 0 4px rgba(255, 122, 0, 0.15);
+
+  background: #fff;
+}
+
+/* DISABLED */
+
+.form-control:disabled {
+  background: #f1f3f5;
+
+  cursor: not-allowed;
+
+  opacity: 0.8;
+}
+
+/* =========================================
+   FORM SELECT
+========================================= */
+
+.form-select {
+  height: 48px;
+
+  border:
+    1.5px solid var(--secondary-soft);
+
+  border-radius: 12px;
+
+  background-color: #fff;
+
+  color: var(--text-primary);
+
+  font-size: 14px;
+  font-weight: 500;
+
+  padding:
+    10px 14px;
+
+  transition:
+    all 0.3s ease;
+
+  box-shadow: none;
+
+  cursor: pointer;
+}
+
+/* HOVER */
+
+.form-select:hover {
+  border-color: var(--secondary);
+}
+
+/* FOCUS */
+
+.form-select:focus {
+  border-color: var(--secondary);
+
+  box-shadow:
+    0 0 0 4px rgba(30, 58, 138, 0.15);
+}
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea.form-control {
+  min-height: 120px;
+
+  resize: vertical;
+
+  padding-top: 14px;
+}
+
+/* =========================================
+   FORM CHECK
+========================================= */
+
+.form-check {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+/* CHECK INPUT */
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+
+  border:
+    2px solid var(--primary);
+
+  cursor: pointer;
+
+  transition:
+    all 0.25s ease;
+}
+
+/* CHECKED */
+
+.form-check-input:checked {
+  background-color: var(--primary);
+
+  border-color: var(--primary);
+}
+
+/* FOCUS */
+
+.form-check-input:focus {
+  box-shadow:
+    0 0 0 4px rgba(255, 122, 0, 0.2);
+}
+
+/* CHECK LABEL */
+
+.form-check-label {
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--text-primary);
+
+  cursor: pointer;
+}
+
+/* =========================================
+   INVALID STATE
+========================================= */
+
+.is-invalid,
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(220,53,69,0.15);
+}
+
+/* =========================================
+   VALID STATE
+========================================= */
+
+.is-valid,
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: #198754 !important;
+
+  box-shadow:
+    0 0 0 4px rgba(25,135,84,0.15);
+}
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group,
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+/* =========================================
+   DARK MODE SUPPORT
+========================================= */
+
+.dark .form-control,
+.dark .form-select {
+  background: #1f2937;
+
+  border-color: #374151;
+
+  color: #fff;
+}
+
+.dark .form-control::placeholder {
+  color: #9ca3af;
+}
+
+.dark .form-label,
+.dark label,
+.dark .form-check-label {
+  color: #f1f5f9;
+}

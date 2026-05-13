@@ -1,0 +1,254 @@
+/* =========================================
+   COMMON BUTTON
+========================================= */
+
+.custom-btn {
+  position: relative;
+
+  border: none;
+  outline: none;
+
+  height: 46px;
+
+  padding: 0 22px;
+
+  border-radius: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition:
+    all 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* =========================================
+   HOVER EFFECT
+========================================= */
+
+.custom-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* =========================================
+   ACTIVE EFFECT
+========================================= */
+
+.custom-btn:active {
+  transform: scale(0.97);
+}
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.custom-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.btn-icon {
+  font-size: 15px;
+}
+
+/* =========================================
+   RIPPLE EFFECT
+========================================= */
+
+.custom-btn::before {
+  content: "";
+
+  position: absolute;
+
+  width: 0;
+  height: 0;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.3);
+
+  transform: translate(-50%, -50%);
+
+  transition: width 0.6s ease,
+              height 0.6s ease;
+
+  top: var(--y);
+  left: var(--x);
+}
+
+.custom-btn:active::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* =========================================
+   PRIMARY
+========================================= */
+
+.btn-primary {
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary),
+      var(--primary-hover)
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   SUCCESS
+========================================= */
+
+.btn-success {
+  background:
+    linear-gradient(
+      135deg,
+      #198754,
+      #157347
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   CANCEL
+========================================= */
+
+.btn-cancel {
+  background:
+    linear-gradient(
+      135deg,
+      #dc3545,
+      #bb2d3b
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   SEND
+========================================= */
+
+.btn-send {
+  background:
+    linear-gradient(
+      135deg,
+      #0dcaf0,
+      #31d2f2
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   SECONDARY
+========================================= */
+
+.btn-secondary {
+  background:
+    linear-gradient(
+      135deg,
+      var(--secondary),
+      var(--secondary-hover)
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   WARNING
+========================================= */
+
+.btn-warning {
+  background:
+    linear-gradient(
+      135deg,
+      #ffc107,
+      #ffca2c
+    );
+
+  color: #000;
+}
+
+/* =========================================
+   DARK
+========================================= */
+
+.btn-dark {
+  background:
+    linear-gradient(
+      135deg,
+      #212529,
+      #000
+    );
+
+  color: #fff;
+}
+
+/* =========================================
+   OUTLINE
+========================================= */
+
+.btn-outline {
+  background: transparent;
+
+  border: 2px solid var(--primary);
+
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.btn-loading {
+  pointer-events: none;
+}
+
+/* SPINNER */
+
+.btn-spinner {
+  width: 18px;
+  height: 18px;
+
+  border:
+    2px solid rgba(255,255,255,0.4);
+
+  border-top:
+    2px solid #fff;
+
+  border-radius: 50%;
+
+  animation:
+    spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+
+  100% {
+    transform: rotate(360deg);
+  }
+
+}

@@ -1,0 +1,408 @@
+/* =========================
+   DASHBOARD CARD
+========================= */
+
+.dashboard-card {
+  border-radius: 16px!important;
+  overflow: hidden;
+  min-height: 140px;
+  transition: all 0.3s ease;
+  background: linear-gradient( var(--secondary), var(--secondary-active))!important;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+}
+
+.card-primary {
+  background: linear-gradient(
+    135deg,
+    #0d6efd,
+    #084298
+  );
+
+  color: #fff;
+}
+
+.card-success {
+  background: linear-gradient(
+    135deg,
+    #198754,
+    #0f5132
+  );
+
+  color: #fff;
+}
+
+.card-warning {
+  background: linear-gradient(
+    135deg,
+    #ffc107,
+    #cc9a06
+  );
+
+  color: #000;
+}
+
+.card-danger {
+  background: linear-gradient(
+    135deg,
+    #dc3545,
+    #842029
+  );
+
+  color: #fff;
+}
+
+.card-info {
+  background: linear-gradient(
+    135deg,
+    #0dcaf0,
+    #087990
+  );
+
+  color: #fff;
+}
+
+.card-dark {
+  background: linear-gradient(
+    135deg,
+    #212529,
+    #000
+  );
+
+  color: #fff;
+}
+
+/* =========================
+   QUICK ACTIONS
+========================= */
+
+.quick-action-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 15px;
+}
+
+.quick-action-btn {
+  border: none;
+
+  background: var(--primary-soft);
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  transition: all 0.3s ease;
+}
+
+.quick-action-btn:hover {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+.quick-action-btn i {
+  font-size: 28px;
+}
+
+/* =========================
+   CHART PLACEHOLDER
+========================= */
+
+.chart-placeholder {
+  height: 320px;
+
+  border-radius: 12px;
+
+  background: #f1f3f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6c757d;
+}
+
+/* =========================
+   ACTIVITY LIST
+========================= */
+
+.activity-list {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--primary-soft);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.activity-dot {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  margin-top: 5px;
+}
+
+/* ===================Procurement==================== */
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.page-header h3 {
+  color: var(--secondary);
+}
+
+/* =========================================
+   STATUS BADGES
+========================================= */
+
+.status-badge {
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 90px;
+
+  padding: 6px 12px;
+
+  border-radius: var(--radius-pill);
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+/* SUCCESS */
+
+.status-badge.success {
+
+  background:
+    var(--success-light);
+
+  color:
+    var(--success);
+}
+
+/* WARNING */
+
+.status-badge.warning {
+
+  background:
+    var(--warning-light);
+
+  color:
+    var(--warning);
+}
+
+/* DANGER */
+
+.status-badge.danger {
+
+  background:
+    var(--danger-light);
+
+  color:
+    var(--danger);
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.custom-table {
+
+  border-radius:
+    var(--radius-md);
+
+  overflow: hidden;
+}
+
+/* TABLE */
+
+.custom-table table {
+  margin-bottom: 0;
+}
+
+/* TABLE HEAD */
+
+.custom-table thead {
+
+  background:
+    var(--secondary);
+
+  color:
+    var(--white);
+}
+
+/* HEAD CELLS */
+
+.custom-table thead th {
+
+  font-weight: 600;
+
+  border-bottom: none;
+
+  padding:
+    14px 12px;
+}
+
+/* BODY */
+
+.custom-table tbody tr {
+
+  transition:
+    var(--transition);
+}
+
+/* HOVER */
+
+.custom-table tbody tr:hover {
+
+  background:
+    var(--primary-light);
+}
+
+/* TD */
+
+.custom-table td {
+
+  vertical-align: middle;
+
+  padding:
+    14px 12px;
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.datatable-pagination {
+  margin-top: 20px;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+
+  border-radius:
+    var(--radius-lg);
+
+  border:
+    1px solid
+    var(--border-soft);
+
+  box-shadow:
+    var(--shadow-sm);
+
+  transition:
+    var(--transition);
+}
+
+.card:hover {
+
+  box-shadow:
+    var(--shadow-md);
+}
+/* ===================Procurement==================== */
+
+
+
+/* ======================= Error & Not Found starts=============== */
+.error-page {
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--primary-light),
+      var(--secondary-light)
+    );
+
+  min-height: 100vh;
+}
+
+/* ERROR CODE */
+
+.error-code {
+
+  font-size: 140px;
+
+  font-weight: 800;
+
+  line-height: 1;
+
+  color:
+    var(--secondary);
+
+  margin-bottom: 20px;
+
+  text-shadow:
+    0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* TITLE */
+
+.error-page h2 {
+
+  color:
+    var(--text-primary);
+}
+
+/* DESCRIPTION */
+
+.error-page p {
+
+  font-size: 16px;
+}
+
+/* BUTTON */
+
+.error-page .btn {
+
+  min-width: 160px;
+
+  height: 46px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius:
+    var(--radius-md);
+}
+/* ======================= Error & Not Found ends ==================*/
