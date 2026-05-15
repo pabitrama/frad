@@ -9,17 +9,17 @@ import {
 
 import MDBDataTableComponent from "../../../components/common/MDBDataTable/MDBDataTableComponent";
 
-import InventoryStats from "../../../components/ComponentInventory/InventoryStats";
+import InventoryStats from "../../../components/Inventory/InventoryStats";
 
-import InventoryFilters from "../../../components/ComponentInventory/InventoryFilters";
+import InventoryFilters from "../../../components/Inventory/InventoryFilters";
 
-import InventoryStatusBadge from "../../../components/ComponentInventory/InventoryStatusBadge";
+import InventoryStatusBadge from "../../../components/Inventory/InventoryStatusBadge";
 
-import InventoryActionButtons from "../../../components/ComponentInventory/InventoryActionButtons";
+import InventoryActionButtons from "../../../components/Inventory/InventoryActionButtons";
 
-import AddInventoryModal from "../../../components/ComponentInventory/AddInventoryModal";
+import AddInventoryModal from "../../../components/Inventory/AddInventoryModal";
 
-import ViewInventoryModal from "../../../components/ComponentInventory/ViewInventoryModal";
+import ViewInventoryModal from "../../../components/Inventory/ViewInventoryModal";
 
 const AInventory = () => {
 
@@ -312,11 +312,11 @@ const AInventory = () => {
 
             columnVisibility={true}
 
-            fixedLeftColumns={1}
+            // fixedLeftColumns={1}
 
-            fixedRightColumns={1}
+            // fixedRightColumns={1}
 
-            tableHeight="500px"
+            // tableHeight="500px"
 
           />
 

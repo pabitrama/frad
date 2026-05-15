@@ -14,6 +14,7 @@ import {
 
 
 import login_left_img from "../../assets/images/frad_login_left.png";
+import odisha_govt_seal from "../../assets/images/seal_white.png";
 
 import "./Login.css";
 
@@ -30,6 +31,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../../redux/slices/authSlice";
 
 import { Link, useNavigate } from "react-router-dom";
+import CustomButton from "../../components/common/Button/CustomButton";
 
 const Login = () => {
 
@@ -187,8 +189,19 @@ const Login = () => {
     <div className="login-page">
 
       <Container fluid>
+        <Row className="login_header">
+            <Col lg="12" md="12">
+                <div className="d-flex justify-contetn-start align-items-center gap-3">
+                    <img className="lh_logo" src={odisha_govt_seal} alt="Odisha Seal" />
+                    <div className="lh_lext">
+                        <h4>Fisheries and Animal Resources Development Department</h4>
+                        <h5>Government of Odisha</h5>
+                    </div>
+                </div>
+            </Col>
+        </Row>
 
-        <Row className="vh-100 align-items-center justify-content-center">
+        <Row className="vh-100 align-items-center justify-content-center login_section">
 
           {/* =========================================
               LEFT IMAGE
@@ -232,9 +245,9 @@ const Login = () => {
                     Semen Inventory Portal
                   </h2>
 
-                  <p className="text-light">
+                  {/* <p className="text-light">
                     Role Based Login System
-                  </p>
+                  </p> */}
 
                 </div>
 
@@ -378,100 +391,120 @@ const Login = () => {
                       </FormGroup>
 
                       {/* OTP SECTION */}
-                      <FormGroup>
+                      <FormGroup className="position-relative">
 
                         <Label className="text-white">
                           OTP Verification
                         </Label>
 
-                        <div className="otp-wrapper">
+                        <Row>
+                            <Col md="4">
+                                <Button
+                                    type="button"
+                                    className="otp-btn"
+                                    disabled={
+                                        otpSent && timer > 0
+                                    }
+                                    onClick={handleSendOTP}
+                                    >
 
-                          <Field
-                            as={Input}
-                            type="text"
-                            name="otp"
-                            placeholder="Enter OTP"
-                          />
+                                    {!otpSent
+                                        ? "Send OTP"
+                                        : timer > 0
+                                        ? `${timer}s`
+                                        : "Resend"}
 
-                          <Button
-                            type="button"
-                            className="otp-btn"
-                            disabled={
-                              otpSent && timer > 0
-                            }
-                            onClick={handleSendOTP}
-                          >
+                                </Button>
+                            </Col>
+                            
+                            {otpSent && (
+                                <Col md="4">
+                                    <div className="otp-wrapper">
+                                        
+                                    <Field
+                                        as={Input}
+                                        type="text"
+                                        name="otp"
+                                        placeholder="Enter OTP"
+                                    />
+                                    </div>
+                                </Col>
 
-                            {!otpSent
-                              ? "Send OTP"
-                              : timer > 0
-                                ? `${timer}s`
-                                : "Resend"}
+                            )}
+                            {/* VERIFY OTP */}
+                            {otpSent && !otpVerified && (
+                                <Col md="4">
 
-                          </Button>
+                                    <Button
+                                    type="button"
+                                    className="verify-btn w-100 mb-3"
+                                    onClick={handleVerifyOTP}
+                                    >
 
-                        </div>
+                                    Verify OTP
 
+                                    </Button>
+
+                                </Col>
+                            )}
+                        </Row>
+                        
                         <ErrorMessage
                           name="otp"
                           component="div"
                           className="text-danger small"
                         />
+                     
+                        {/* VERIFIED */}
+                        {otpVerified && (
+
+                            <div className="otp-success mb-3">
+
+                            <i className="bi bi-check-circle-fill"></i>
+
+                            OTP Verified Successfully
+
+                            </div>
+
+                        )}
 
                       </FormGroup>
 
-                      {/* VERIFY OTP */}
-                      {otpSent && !otpVerified && (
+                     
 
-                        <Button
-                          type="button"
-                          className="verify-btn w-100 mb-3"
-                          onClick={handleVerifyOTP}
-                        >
 
-                          Verify OTP
+                      <Row>
+                       
+                        <Col md="6">
+                            {/* FORGOT */}
+                            <div className="text-center mt-3">
 
-                        </Button>
+                                <Link
+                                to="/forgot-password"
+                                className="forgot-btn"
+                                >
 
-                      )}
+                                Forgot Password?
 
-                      {/* VERIFIED */}
-                      {otpVerified && (
+                                </Link>
 
-                        <div className="otp-success mb-3">
+                            </div>
+                        </Col>
+                        <Col md="6">
+                            {/* LOGIN BUTTON */}
+                            <CustomButton
+                                type="submit"
+                                text="Login"
+                                variant="secondary"
+                                icon="bi bi-funnel"
+                                fullWidth={true}
+                            />
+                        </Col>
 
-                          <i className="bi bi-check-circle-fill"></i>
+                      </Row>
+                      
 
-                          OTP Verified Successfully
 
-                        </div>
-
-                      )}
-
-                      {/* LOGIN BUTTON */}
-                      <Button
-                        color="primary"
-                        type="submit"
-                        className="login-btn w-100"
-                      >
-
-                        Login
-
-                      </Button>
-
-                      {/* FORGOT */}
-                      <div className="text-center mt-3">
-
-                        <Link
-                          to="/forgot-password"
-                          className="forgot-btn"
-                        >
-
-                          Forgot Password?
-
-                        </Link>
-
-                      </div>
 
                     </Form>
 

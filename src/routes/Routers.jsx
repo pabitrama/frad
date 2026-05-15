@@ -10,20 +10,28 @@ from "react-router-dom";
 
 import AdminDashboard from '../pages/Admin/ADashboard/AdminDashboard';
 import Procurement from "../pages/Admin/Procurement/Procurement";
+import AInventory from "../pages/Admin/AdminInventory/AInventory";
+import Allocation from "../pages/Admin/Allocation/Allocation";
+
 
 
 import StateOfficerDashboard from "../pages/StateOfficer/SODashboard/StateOfficerDashboard";
 import StateProcurement from "../pages/StateOfficer/StateProcurement/StateProcurement";
+import StateInventory from "../pages/StateOfficer/StateInventory/StateInventory";
+
+
+
 
 import DOInventory from "../pages/DistrictOfficer/DOInventory/DOInventory";
+import DODashboard from "../pages/DistrictOfficer/DODashboard/DODashboard";
+
+
 
 
 import ErrorPage from "../pages/Error/ErrorPage";
 import NotFound from "../pages/Error/NotFound";
-import AInventory from "../pages/Admin/AdminInventory/AInventory";
-import StateInventory from "../pages/StateOfficer/StateInventory/StateInventory";
-import DODashboard from "../pages/DistrictOfficer/DODashboard/DODashboard";
 import Login from "../pages/auth/Login";
+import StateAllocation from "../pages/StateOfficer/StateAllocation/StateAllocation";
 
 // const AdminDashboard = React.lazy(() => import("../pages/Admin/ADashboard/AdminDashboard"));
 
@@ -34,12 +42,15 @@ const pageRouters = [
     { path: "/admin/dashboard", component: <AdminDashboard /> },
     { path: "/admin/procurement", component: <Procurement /> },
     { path: "/admin/inventory", component: <AInventory /> },
+    { path: "/admin/allocation", component: <Allocation /> },
     
     
     //State Officer
     { path: "/state/dashboard", component: <StateOfficerDashboard /> },
     { path: "/state/procurement", component: <StateProcurement /> },
     { path: "/state/inventory", component: <StateInventory /> },
+    { path: "/state/allocation", component: <StateAllocation /> },
+
 
     
     

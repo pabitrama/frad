@@ -26,6 +26,67 @@ background:
   font-weight: 600;
 }
 
+.login_header{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    margin: 0!important;
+    /* background-color: var(--secondary-active); */
+    background: linear-gradient(
+        90deg,
+        var(--secondary) 30%,
+        /* var(--secondary-soft) 100% */
+        transparent 90%
+    );
+}
+
+.lh_logo{
+    height: 80px;
+}
+
+.lh_lext h5{
+    color: var(--primary-light)!important;
+    line-height: 20px;
+}
+.lh_lext h4{
+    color: var(--light)!important;
+    line-height: 20px;
+}
+
+.login_section{
+    position: relative;
+    z-index: 2;
+    padding-top: 50px!important;
+}
+
+@media screen and (max-width: 1400px) {
+    .login_header{
+        padding: 6px;
+    }
+    .lh_logo{
+        height: 50px;
+    }
+    .lh_lext h5{
+        font-size: 14px!important;
+        line-height: 15px;
+
+    }
+    .lh_lext h4{
+        font-size: 12px!important;
+        line-height: 15px;
+
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .login_section{
+        padding-top: 50px!important;
+    }
+}
+
 /* =========================================
    LOGIN CARD
 ========================================= */
@@ -56,12 +117,7 @@ background:
 /* OTP BUTTON */
 
 .otp-btn {
-  position: absolute;
 
-  top: 50%;
-  right: 6px;
-
-  transform: translateY(-50%);
 
   border: none;
 
@@ -143,29 +199,6 @@ background:
   position: relative;
 }
 
-.otp-btn {
-  position: absolute;
-
-  top: 50%;
-  right: 6px;
-
-  transform: translateY(-50%);
-
-  border: none;
-
-  background:
-    var(--primary);
-
-  color: #fff;
-
-  height: 36px;
-
-  border-radius: 10px;
-
-  padding: 0 14px;
-
-  font-size: 12px;
-}
 
 /* VERIFY */
 
@@ -191,21 +224,13 @@ background:
 /* SUCCESS */
 
 .otp-success {
-  background:
-    rgba(25,135,84,0.15);
-
-  border:
-    1px solid #198754;
-
-  color: #198754;
-
-  border-radius: 12px;
-
-  padding: 12px;
-
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  font-weight: 600;
+    position: absolute;
+    right: 52px;
+    top: 0;
+    color: var(--secondary-light);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
 }

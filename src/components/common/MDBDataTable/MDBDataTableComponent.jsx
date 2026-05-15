@@ -29,7 +29,7 @@ const MDBDataTableComponent = ({
   columns = [],
   rows = [],
 
-  tableHeight = "500px",
+  tableHeight = "",
 
   fixedLeftColumns = 0,
   fixedRightColumns = 0,

@@ -406,3 +406,8 @@
     var(--radius-md);
 }
 /* ======================= Error & Not Found ends ==================*/
+
+
+.stat-card{
+    background-color: var(--primary-soft)!important;
+}

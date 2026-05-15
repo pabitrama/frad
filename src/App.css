@@ -118,6 +118,12 @@ label {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1280px) {
+  .form-select {
+    height: 48px!important;
+  }
+}
+
 /* HOVER */
 
 .form-select:hover {
