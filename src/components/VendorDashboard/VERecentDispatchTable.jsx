@@ -31,7 +31,7 @@ const dispatches = [
 
 ];
 
-const RecentDispatchTable = () => {
+const VERecentDispatchTable = () => {
 
   return (
 
@@ -146,4 +146,4 @@ const RecentDispatchTable = () => {
 
 };
 
-export default RecentDispatchTable;
+export default VERecentDispatchTable;

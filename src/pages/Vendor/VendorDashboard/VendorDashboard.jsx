@@ -7,9 +7,11 @@ import VendorStatsCards from "../../../components/VendorDashboard/VendorStatsCar
 
 import DispatchStatusChart from "../../../components/VendorDashboard/DispatchStatusChart";
 
-import PendingOrdersTable from "../../../components/vendorDashboard/PendingOrdersTable";
+import VEPendingOrdersTable from "../../../components/VendorDashboard/VEPendingOrdersTable";
 
-import RecentDispatchTable from "../../../components/vendorDashboard/RecentDispatchTable";
+import VERecentDispatchTable from "../../../components/VendorDashboard/VERecentDispatchTable";
+
+
 
 const VendorDashboard = () => {
 
@@ -51,7 +53,7 @@ const VendorDashboard = () => {
 
         <Col lg="8" className="mb-4">
 
-          <PendingOrdersTable />
+          <VEPendingOrdersTable />
 
         </Col>
 
@@ -63,7 +65,7 @@ const VendorDashboard = () => {
 
         <Col lg="12">
 
-          <RecentDispatchTable />
+          <VERecentDispatchTable />
 
         </Col>
 

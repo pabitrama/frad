@@ -31,7 +31,7 @@ const orders = [
 
 ];
 
-const PendingOrdersTable = () => {
+const VEPendingOrdersTable = () => {
 
   return (
 
@@ -133,4 +133,4 @@ const PendingOrdersTable = () => {
 
 };
 
-export default PendingOrdersTable;
+export default VEPendingOrdersTable;
