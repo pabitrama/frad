@@ -414,20 +414,18 @@ const rows = tableRows
             </Col>
 
             {/* FILTER BUTTON */}
-            <Col
-              lg="2"
-              md="6"
-              className="d-flex align-items-end"
-            >
+            <Col lg="2" className="d-flex align-items-end" >
+              <FormGroup>
 
-              <CustomButton
-                text="Filter"
-                variant="secondary"
-                icon="bi bi-funnel"
-                fullWidth={true}
-              />
-
+                  <CustomButton
+                      text="Filter"
+                      variant="secondary"
+                      icon="bi bi-funnel"
+                      fullWidth={true}
+                  />
+              </FormGroup>
             </Col>
+
 
           </Row>
 

@@ -59,7 +59,7 @@ const authSlice = createSlice({
 
         new Date().getTime()
         +
-        30 * 60 * 1000;
+        300 * 60 * 1000;
 
       state.isAuthenticated =
         true;

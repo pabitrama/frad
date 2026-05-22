@@ -15,6 +15,7 @@ import {
 
 import login_left_img from "../../assets/images/frad_login_left.png";
 import odisha_govt_seal from "../../assets/images/seal_white.png";
+import odisha_cm from "../../assets/images/cm.png";
 
 import "./Login.css";
 
@@ -190,13 +191,22 @@ const Login = () => {
 
       <Container fluid>
         <Row className="login_header">
-            <Col lg="12" md="12">
+            <Col lg="8" md="8">
                 <div className="d-flex justify-contetn-start align-items-center gap-3">
                     <img className="lh_logo" src={odisha_govt_seal} alt="Odisha Seal" />
                     <div className="lh_lext">
                         <h4>Fisheries and Animal Resources Development Department</h4>
                         <h5>Government of Odisha</h5>
                     </div>
+                </div>
+            </Col>
+            <Col lg="4" md="4">
+                <div className="d-flex justify-content-end align-items-center gap-3">
+                    <div className="text-end d-lg-block d-none">
+                        <h5 className="text-white">Shri Mohan Charan Majhi</h5>
+                        <span className="text-white">Hon'ble Chief Minister</span>
+                    </div>
+                    <img src={odisha_cm} alt="Odisha CM" height={"80px"} />
                 </div>
             </Col>
         </Row>
